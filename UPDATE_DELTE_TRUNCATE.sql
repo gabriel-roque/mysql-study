@@ -15,11 +15,11 @@ INSERT INTO cursos VALUES
 
 SELECT * FROM cursos;
 
-# atualize tabela cursos onde o id = 1
+-- atualize tabela cursos onde o id = 1
 UPDATE cursos
 set nome = 'HTML5' WHERE id = 1;
 
-# usa o where para apontar em qual linha quero alterar
+-- usa o where para apontar em qual linha quero alterar
 UPDATE cursos
 set nome = 'PHP', ano = 2015 WHERE id = 4;
 
@@ -27,16 +27,16 @@ UPDATE cursos
 set nome = 'Java', ano = 2015, carga = 40 WHERE id = 5
 limit 1;
 
-#alterar varias linhas ao mesmo tempo
+--alterar varias linhas ao mesmo tempo
 UPDATE cursos
 set ano = 2050, carga = 450 WHERE ano = 2018;
 
-# Deleta um registro
+-- Deleta um registro
 DELETE FROM cursos WHERE id = 8;
 
-# Deleta varios regisros
+-- Deleta varios regisros
 DELETE FROM cursos where ano = 2050;
 
-# apaga todos os registros
+-- apaga todos os registros
 TRUNCATE cursos;
 ALTER TABLE cursos AUTO_INCREMENT = 1;

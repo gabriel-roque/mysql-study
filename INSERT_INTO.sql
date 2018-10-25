@@ -15,10 +15,10 @@ CREATE TABLE pessoas(
 INSERT INTO pessoas (nome, idade, sexo, peso, altura, nascionalidade)
 VALUES ('Gabriel', '1999-04-12', 'M', '60.5', '1.74', 'Brasil');
 
-# se for inserir na mesma ordem do banco nao tem necessidade de esclarecer os mesmos
+-- se for inserir na mesma ordem do banco nao tem necessidade de esclarecer os mesmos
 INSERT INTO pessoas VALUES (DEFAULT , 'Lucas', '1998-01-11', 'M', '80.5', '1.84', 'Brasil');
 
-# para quando for inserir varios registros de uma vez.
+-- para quando for inserir varios registros de uma vez.
 INSERT INTO pessoas VALUES
 (DEFAULT , 'Camila', '2002-12-23', 'F', '60.9', '1.65', DEFAULT),
 (DEFAULT , 'Brian', '2000-02-15', 'M', '75.5', '1.90', DEFAULT),
